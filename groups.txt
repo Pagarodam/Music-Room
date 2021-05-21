@@ -1,3 +1,5 @@
 oara-->Patrick ; Guitar,  Rafa ; Singer,  
 asdf-->Rafa ; Singer,  Fonsy ; Guitar,  
 asdf-->Patrick ; Guitar,  
+RkeR-->Patrick ; Guitar,  Rafa ; Singer,  Fonsy ; Guitar,  Copete ; Drums,  Grillo ; Bass,  
+JavaFX Figthers-->Jose ; Guitar,  Alberto ; Singer,  Ivan ; Drums,  

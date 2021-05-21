@@ -1,7 +1,7 @@
 package management.classes;
 import java.util.Objects;
 /**
- * Class to define the bookings of a music room
+ * Class to define the users
  */
 public class User {
     private String name;
@@ -50,6 +50,10 @@ public class User {
         return Objects.hash(name, instrument);
     }
 
+    /**
+     * Method to see the name and instrument of the user
+     * @return An String with the name and instrument
+     */
     @Override
     public String toString() {
         return  name + " ; " + instrument + ", ";

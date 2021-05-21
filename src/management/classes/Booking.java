@@ -1,34 +1,25 @@
 package management.classes;
 /**
  * Class to define the bookings of a music room
- * @param date A String whith a date of the book
- * @param gruop A String whith the name of the group whith his members and instruments
  */
 public class Booking {
     private String date;
     private String group;
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public String getGroup() {
-        return group;
-    }
-
-    public void setGroup(String group) {
-        this.group = group;
-    }
-
+    /**
+     * Constructor whith parameters
+     * @param date A String whith a date of the booking
+     * @param group A String whith the name of the band and his components
+     */
     public Booking(String date, String group) {
         this.date = date;
         this.group = group;
     }
 
+    /**
+     * Method to see the date, name of the group, users and instruments
+     * @return An String with the date of the booking, name of the group and his components
+     */
     @Override
     public String toString() {
         return date + "¬"  + group;

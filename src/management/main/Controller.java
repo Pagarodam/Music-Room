@@ -80,7 +80,7 @@ public class Controller implements Initializable {
         cbSelectMusician.getItems().addAll(patrick, grillo, rafa, alberto,
                 ivan, fonsy, copete, carlos, adolfo, jose);
 
-        //------------------------------------------------------------- Observable List of users
+        //------------------------------------------------------------- Observable´s List
 
         f = new FileManager();
         f.saveFile(f.readFile());
