@@ -1,8 +1,9 @@
 package management.classes;
-
-import java.util.Arrays;
-import java.util.List;
-
+/**
+ * Class to define the bookings of a music room
+ * @param name A String whith a name of the group
+ * @param users A String whith the name of the  users of a group whith his instruments
+ */
 public class Group {
     private String name;
     private String users;
@@ -31,6 +32,6 @@ public class Group {
 
     @Override
     public String toString() {
-        return name + "  -->  "  + users;
+        return name + "-->"  + users;
     }
 }

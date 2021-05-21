@@ -1,5 +1,9 @@
 package management.classes;
-
+/**
+ * Class to define the bookings of a music room
+ * @param date A String whith a date of the book
+ * @param gruop A String whith the name of the group whith his members and instruments
+ */
 public class Booking {
     private String date;
     private String group;
@@ -27,6 +31,6 @@ public class Booking {
 
     @Override
     public String toString() {
-        return date + " ; "  + group;
+        return date + "¬"  + group;
     }
 }

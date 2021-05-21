@@ -12,13 +12,15 @@ import management.classes.Booking;
 import management.classes.FileManager;
 import management.classes.Group;
 import management.classes.User;
-
-
 import java.net.URL;
-
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+/**
+ * Class to control and initialize all the parameters
+ * @author patrickGalanRodriguez
+ * @version 2.0
+ */
 public class Controller implements Initializable {
     @FXML
     private AnchorPane tbControlPanel;
@@ -82,11 +84,12 @@ public class Controller implements Initializable {
 
         f = new FileManager();
         f.saveFile(f.readFile());
+        f.saveBookings(f.readBookings());
         users = FXCollections.observableArrayList();
-        groups = FXCollections.observableArrayList(f.readFile()); //TODO Did not work load mode since create a new group
-        bookings = FXCollections.observableArrayList();
-
-
+        groups = FXCollections.observableArrayList(f.readFile());
+        lvGroups.setItems(groups);
+        bookings = FXCollections.observableArrayList(f.readBookings());
+        lvBookings.setItems(bookings);
     }
 
     //------------------------------------------- Select from comboBox
@@ -118,8 +121,6 @@ public class Controller implements Initializable {
             alert.showAndWait();
         }
     }
-
-
 
     public void addBand(ActionEvent actionEvent) {
         String bandName = tfBandName.getText();
@@ -161,12 +162,13 @@ public class Controller implements Initializable {
             alert.setContentText("Already exists");
             alert.showAndWait();
         }
+        f.saveBookings(bookings);
     }
     //-------------------------------------------------- Delete methods
     public void deleteBooking(ActionEvent actionEvent) {
         int position = lvBookings.getSelectionModel().getSelectedIndex();
         bookings.remove(position);
-        f.saveFile(groups);
+        f.saveBookings(bookings);
     }
 
     public void deleteBand(ActionEvent actionEvent) {
