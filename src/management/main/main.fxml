@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="tbControlPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="1232.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="management.main.Controller">
+   <children>
+      <TextField fx:id="tfBandName" layoutX="158.0" layoutY="94.0" />
+      <ComboBox fx:id="cbSelectMusician" layoutX="157.0" layoutY="131.0" prefWidth="150.0" />
+      <Label layoutX="38.0" layoutY="98.0" text="Band´s name" />
+      <Label layoutX="38.0" layoutY="135.0" text="Musicians" />
+      <Label layoutX="200.0" layoutY="44.0" text="Create Band" />
+      <DatePicker fx:id="calendar" layoutX="713.0" layoutY="267.0" />
+      <ListView fx:id="lvMusicians" layoutX="422.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btAddMusician" layoutX="188.0" layoutY="173.0" mnemonicParsing="false" onAction="#btAddMusician" text="Add Musician" />
+      <Button fx:id="btAddBand" layoutX="490.0" layoutY="267.0" mnemonicParsing="false" onAction="#addBand" text="AddBand" />
+      <ListView fx:id="lvGroups" layoutX="700.0" layoutY="52.0" onMouseClicked="#select" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="782.0" layoutY="27.0" text=" Bands" />
+      <Label layoutX="496.0" layoutY="27.0" text="Musicians" />
+      <ListView fx:id="lvBookings" layoutX="968.0" layoutY="52.0" onMouseClicked="#select" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="1044.0" layoutY="27.0" text="Bookings" />
+      <Button fx:id="btAddBooking" layoutX="818.0" layoutY="300.0" mnemonicParsing="false" onAction="#addBooking" text="AddBooking" />
+      <Button fx:id="btDeleteBooking" layoutX="1043.0" layoutY="267.0" mnemonicParsing="false" onAction="#deleteBooking" text="Delete" />
+      <Button fx:id="btDeleteBand" layoutX="700.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteBand" text="Delete" />
+   </children>
+</AnchorPane>
